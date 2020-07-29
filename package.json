@@ -1,20 +1,31 @@
 {
+<<<<<<< HEAD
   "name": "sub_task_app",
+=======
+  "name": "sub_task_app_2",
+>>>>>>> origin/master
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
+<<<<<<< HEAD
     "@rails/webpacker": "^5.1.1",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+=======
+    "@rails/webpacker": "4.2.2",
+>>>>>>> origin/master
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+<<<<<<< HEAD
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.11",
+=======
+>>>>>>> origin/master
     "webpack-dev-server": "^3.11.0"
   }
 }

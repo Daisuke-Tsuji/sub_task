@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+<<<<<<< HEAD
   before_action :configure_permitted_parameters, if: :devise_controller?
 
 
@@ -12,4 +13,6 @@ class ApplicationController < ActionController::Base
       redirect_to new_user_session_url unless user_signed_in?
     end
 
+=======
+>>>>>>> origin/master
 end

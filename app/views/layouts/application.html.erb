@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
     <%= favicon_link_tag 'favicon.ico' %>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
@@ -67,5 +68,17 @@
 
     <div class="blank_space">
     </div>
+=======
+    <title>SubTaskApp2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+>>>>>>> origin/master
   </body>
 </html>

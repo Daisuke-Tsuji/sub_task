@@ -1,4 +1,5 @@
 const { environment } = require('@rails/webpacker')
+<<<<<<< HEAD
 const { VueLoaderPlugin } = require('vue-loader')
 const vue = require('./loaders/vue')
 
@@ -29,5 +30,7 @@ module.exports = environment
 
 const customConfig = require('./custom')
 environment.config.merge(customConfig)
+=======
+>>>>>>> origin/master
 
 module.exports = environment

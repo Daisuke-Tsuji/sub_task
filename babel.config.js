@@ -18,7 +18,11 @@ module.exports = function(api) {
   return {
     presets: [
       isTestEnv && [
+<<<<<<< HEAD
         require('@babel/preset-env').default,
+=======
+        '@babel/preset-env',
+>>>>>>> origin/master
         {
           targets: {
             node: 'current'
@@ -26,7 +30,11 @@ module.exports = function(api) {
         }
       ],
       (isProductionEnv || isDevelopmentEnv) && [
+<<<<<<< HEAD
         require('@babel/preset-env').default,
+=======
+        '@babel/preset-env',
+>>>>>>> origin/master
         {
           forceAllTransforms: true,
           useBuiltIns: 'entry',
@@ -37,24 +45,41 @@ module.exports = function(api) {
       ]
     ].filter(Boolean),
     plugins: [
+<<<<<<< HEAD
       require('babel-plugin-macros'),
       require('@babel/plugin-syntax-dynamic-import').default,
       isTestEnv && require('babel-plugin-dynamic-import-node'),
       require('@babel/plugin-transform-destructuring').default,
       [
         require('@babel/plugin-proposal-class-properties').default,
+=======
+      'babel-plugin-macros',
+      '@babel/plugin-syntax-dynamic-import',
+      isTestEnv && 'babel-plugin-dynamic-import-node',
+      '@babel/plugin-transform-destructuring',
+      [
+        '@babel/plugin-proposal-class-properties',
+>>>>>>> origin/master
         {
           loose: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-proposal-object-rest-spread').default,
+=======
+        '@babel/plugin-proposal-object-rest-spread',
+>>>>>>> origin/master
         {
           useBuiltIns: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-runtime').default,
+=======
+        '@babel/plugin-transform-runtime',
+>>>>>>> origin/master
         {
           helpers: false,
           regenerator: true,
@@ -62,7 +87,11 @@ module.exports = function(api) {
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-regenerator').default,
+=======
+        '@babel/plugin-transform-regenerator',
+>>>>>>> origin/master
         {
           async: false
         }
